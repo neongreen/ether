@@ -98,7 +98,7 @@ type instance TagsK (Tagged t a) = '[KindOf t]
 
 do
   let
-    tupCount = 62
+    tupCount = 20
     varName k = TH.mkName ('a' : show k)
     tagName k = TH.mkName ('t' : show k)
   for [2..tupCount] $ \n -> do
