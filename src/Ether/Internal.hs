@@ -121,7 +121,7 @@ type instance Tags (Tagged t a) = 'HCons t 'HNil
 
 do
   let
-    tupCount = 62
+    tupCount = 20
     varName k = TH.mkName ('a' : show k)
     tagName k = TH.mkName ('t' : show k)
   for [2..tupCount] $ \n -> do
@@ -139,7 +139,7 @@ do
 
 do
   let
-    tupCount = 62
+    tupCount = 20
     varName k = TH.mkName ('a' : show k)
   fmap List.concat $
     for [2..tupCount] $ \n ->
